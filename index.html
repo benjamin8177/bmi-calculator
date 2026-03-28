@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="../../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Bosh sahifaga</a>
+
+    <div class="calculator-box">
+        <h2>BMI Kalkulyator</h2>
+        <p class="subtitle">Tana vazni indeksini bilib oling</p>
+        
+        <div class="input-group">
+            <label>Bo'yingiz (sm)</label>
+            <input type="number" id="height" placeholder="Masalan: 175" min="50" max="300">
+        </div>
+
+        <div class="input-group">
+            <label>Vazningiz (kg)</label>
+            <input type="number" id="weight" placeholder="Masalan: 70" min="20" max="500">
+        </div>
+
+        <button onclick="calculateBMI()">Hisoblash</button>
+        
+        <div id="result" class="result">
+            <!-- Natija shu joyda chiqadi -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
